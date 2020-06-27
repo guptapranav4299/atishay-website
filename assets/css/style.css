@@ -260,13 +260,19 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
-  height: 100vh;
-  /* background:url(/assets/img/BeFunky-collage.jpg); */
-  background-color: #050d18;
-  background-size: cover;
+  /* width: 100%;
+  height: 100vh; */
+  background-image: url(https://thumbs.dreamstime.com/t/very-light-watercolor-background-white-blue-hand-painted-soft-textures-backgrounds-abstract-paint-backdrop-118560226.jpg);
+  /* background-color: #effaff; */
+  /* background-color: #FBFBFB; */
+  width: auto;
+  height: auto;
+  background-size: cover;  
+
 }
 #hero .hero-container {
+    /* background:url(/assets/img/BeFunky-collage.jpg); */
+    /* background-color: #050d18; */
   position: relative;
   z-index: 2;
   min-width: 300px;
@@ -275,24 +281,27 @@ h1, h2, h3, h4, h5, h6 {
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
-  font-weight: 900;
+  font-weight: 600;
   line-height: 56px;
-  color:#ffffff;
-  font-family: var(--font-ram);
+  columns: #ffffff;
+  font-family: var(--font-os);
+  z-index: 6;
 }
 
 #hero p {
-  color:#ffffff;
+  columns: #000000;
   margin-bottom: 50px;
   font-size: 26px;
-  font-family: var(--font-ram),var(--font-os);
+  font-family: var(--font-os);
 }
 
 #hero p span {
-  color: #ffffff;
+  font-family: var(--font-ram);
+  color: #000000;
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
+  z-index: 6;
 }
 
 
@@ -353,6 +362,11 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
+#about{
+  background-color: #FBFBFB;
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -376,101 +390,6 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
-}
-
-
-
-/*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
-.testimonials .testimonial-item {
-  box-sizing: content-box;
-  text-align: center;
-  min-height: 320px;
-}
-
-.testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
-  margin: 0 auto;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: #111;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #999;
-  margin: 0;
-}
-
-.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
-  color: #c3e8fa;
-  font-size: 26px;
-}
-
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 15px 15px 15px;
-  padding: 20px;
-  background: #fff;
-  position: relative;
-  margin-bottom: 35px;
-  border-radius: 6px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-.testimonials .testimonial-item p::after {
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 20px solid #fff;
-  border-right: 20px solid transparent;
-  border-left: 20px solid transparent;
-  position: absolute;
-  bottom: -20px;
-  left: calc(50% - 20px);
-}
-
-.testimonials .owl-nav, .testimonials .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
-
-.testimonials .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd !important;
-}
-
-.testimonials .owl-dot.active {
-  background-color: #149ddd !important;
-}
-
-@media (max-width: 767px) {
-  .testimonials {
-    margin: 30px 10px;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -638,7 +557,7 @@ section {
 	content: "";
 	width: 80px;
 	height: 2px;
-	background-color: #d8d8d8;
+  background-color: #FBFBFB;
 	bottom: 0;
 	left: 50%;
 	margin-left: -40px;
@@ -664,7 +583,8 @@ section {
     margin-bottom:100px;
 }
 .services {
-	background-color: #FBFBFB;
+  background-color: #FBFBFB;
+  /* background-color:#effaff; */
 }
 .single-service {
 	position: relative;
@@ -736,6 +656,9 @@ section {
 }
 
 /* upcoming events and webinars */
+#upcoming-webinar{
+  background-color: #FBFBFB;
+}
 .circle {
   padding: 13px 20px;
   border-radius: 50%;
